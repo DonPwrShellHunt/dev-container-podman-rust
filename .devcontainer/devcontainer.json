@@ -3,12 +3,15 @@
 {
 	"name": "Rust",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/rust:bookworm",
+	// recheck the syntax of uidmap and alter as appropriate
 	"runArgs": [
-		"--userns=keep-id"
+		"--userns=keep-id:uid=1000,gid=1000"
 	],
+	"containerUser": "vscode",
+	"updateRemoteUserUID": true,
 	"containerEnv": {
-		"HOME": "home/node"
+		"HOME": "/home/vscode"
 	},
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	// "mounts": [
@@ -18,17 +21,28 @@
 	// 		"type": "volume"
 	// 	}
 	// ]
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/podman-homebrew:1": {}
-	},
+	// "features": {
+	// 	"ghcr.io/devcontainers-contrib/features/podman-homebrew:1": {}
+	// },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "rustc --version"
+	"postCreateCommand": "rustc --version",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"DavidAnson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker",
+				"rust-lang.rust-analyzer",
+				"tamasfe.even-better-toml",
+				"vadimcn.vscode-lldb",
+				"serayuzgur.crates"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
