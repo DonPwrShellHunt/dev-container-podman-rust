@@ -14,3 +14,9 @@ The magic sauce is this set of lines in devcontainer.json
          "HOME": "/home/vscode"
      }
 ```
+
+## Podman-Desktop upgraded
+
+1.4.0 to 1.5.2 done on 20231103
+
+Immediately relaunched Dev-container-test project and expect continued operational goodness!
