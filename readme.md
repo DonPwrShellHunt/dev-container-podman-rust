@@ -20,3 +20,11 @@ The magic sauce is this set of lines in devcontainer.json
 1.4.0 to 1.5.2 done on 20231103
 
 Immediately relaunched Dev-container-test project and expect continued operational goodness!
+
+## Test onboarding of podman-desktop given podman is removed
+
+Are we running in rootless mode, and
+do we have write access to project file?
+
+1. Yes, we are still running in rootless mode
+1. Yes, we can write to project files
