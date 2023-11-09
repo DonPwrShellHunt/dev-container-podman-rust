@@ -19,9 +19,13 @@ The magic sauce is this set of lines in devcontainer.json
 
 1.4.0 to 1.5.2 done on 20231103
 
+1.5.2 to 1.5.3 done on 20231108
+
 Immediately relaunched Dev-container-test project and expect continued operational goodness!
 
 ## Test onboarding of podman-desktop given podman is removed
+
+I had some issues with the onboarding process due to several podman components still running/or existing. Once those were identified and squashed, the onboarding proceeded reasonably well.
 
 Are we running in rootless mode, and
 do we have write access to project file?
