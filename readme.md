@@ -17,6 +17,8 @@ The magic sauce is this set of lines in devcontainer.json
 
 ## Podman-Desktop upgraded
 
+`brew upgrade --cask podman-desktop`
+
 1.4.0 to 1.5.2 done on 20231103
 
 1.5.2 to 1.5.3 done on 20231108
