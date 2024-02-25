@@ -37,3 +37,7 @@ do we have write access to project file?
 
 1. Yes, we are still running in rootless mode
 1. Yes, we can write to project files
+
+And are we able to `cargo run` from the container workspace and get output?
+
+* `YES` Feb 25, 2024
