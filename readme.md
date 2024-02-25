@@ -17,13 +17,16 @@ The magic sauce is this set of lines in devcontainer.json
 
 ## Podman-Desktop upgraded
 
-`brew upgrade --cask podman-desktop`
+In late February 2024 I revisited testing dev containers, in particularly my dev-container-test in github. This is a very simple hello world Rust example, but I am using Podman rather than Docker.
 
-1.4.0 to 1.5.2 done on 20231103
+Podman Desktop and podman were reinstalled, which is documented elsewhere, and after cleaning up previous dev container artifacts (see Dev Container commands in vscode palette) and updating the Dev Containers extension it worked.
 
-1.5.2 to 1.5.3 done on 20231108
+By worked, I mean I am able to edit the source files and do a `cargo run` within the container to output the literal text.
 
-Immediately relaunched Dev-container-test project and expect continued operational goodness!
+Podman Desktop is on version 1.7.1.
+Podman is on version 4.9.2.
+
+Brew is no longer used in these installs, as podman docs suggest using their installer technology (pkg download).
 
 ## Test onboarding of podman-desktop given podman is removed
 
