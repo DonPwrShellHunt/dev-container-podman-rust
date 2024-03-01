@@ -36,6 +36,7 @@
 			"extensions": [
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
+				"mhutchie.git-graph",
 				"rust-lang.rust-analyzer",
 				"tamasfe.even-better-toml",
 				"vadimcn.vscode-lldb",
