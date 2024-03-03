@@ -5,8 +5,10 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/rust:bookworm",
 	// recheck the syntax of uidmap and alter as appropriate
+	// "--userns=keep-id:uid=1000,gid=1000" worked in podman (no RD so far)
+	// "--user=1000,1000" this was acceptable in Rancher Desktop docker (userns not required)
 	"runArgs": [
-		"--userns=keep-id:uid=1000,gid=1000"
+		"--user=1000:1000"
 	],
 	"containerUser": "vscode",
 	"updateRemoteUserUID": true,
