@@ -45,6 +45,11 @@
 				"serayuzgur.crates"
 			]
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/powershell:1": {
+			"version": "latest"
+		}
 	}
 
 	// Configure tool-specific properties.
