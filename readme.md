@@ -32,6 +32,8 @@ The second test was my dev-container-podman-rust repository, which now has a bog
 
 While this was successful, I'm not confident that the syntax I used with podman was totally right. And I'm not sure any runArgs are needed for Rancher. For now, I'll leave it as is and revisit the topic at some future date.
 
+Using the dev containers feature add within code, I selected PowerShell (latest) and proceeded to build the container. `Eureka` - it worked without any issues! Thank you Rancher. I've been unsuccessful with podman for some time now, and it is good to finally see this capability work.
+
 ## Try setting up podman based container development on MBP FAILED
 
 There is evidence that podman is supported, at least to some degree by the Dev Containers extension.
